@@ -1,5 +1,7 @@
 
 obj-m := cdnna.o
+cdnna-objs := main.o load.o
+
 KDIR := /lib/modules/$(shell uname -r)/build
 PWD := $(shell pwd)
 default:

@@ -4,6 +4,9 @@
 #include <linux/netfilter_ipv4.h>
 
 
+#include "load.h"
+
+
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Grzegorz Wieczorek <grzewster@gmail.com>");
 MODULE_DESCRIPTION("CDN - node alignment");
@@ -13,7 +16,7 @@ static struct nf_hook_ops nfhookops;
 
 unsigned int hook_function(unsigned int hooknum, struct sk_buff *skb, const struct net_device *in, const struct net_device *out, int (*okfn)(struct sk_buff *))
 {
-  printk(KERN_INFO "Packet logged\n"); //log to var/log/messages
+  printk(KERN_INFO "Packet logged %d\n", getmyload()); //log to var/log/messages
   return NF_ACCEPT; //Accept packet
 }
 
