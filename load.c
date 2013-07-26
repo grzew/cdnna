@@ -2,5 +2,5 @@
 
 int getmyload()
 {
-	return 2;
+  return 2;
 }
