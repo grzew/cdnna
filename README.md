@@ -6,6 +6,13 @@ Content delivery network - node alignment. Cdnna is a mechanism that allows to c
 Instalation:
 
 `$ make`
+
 `# insmod cdnna.ko`
+
+After insmod you showuld find in logs:
+
+```
+Jul 28 20:59:58 tardis kernel: [ 5458.615519] CDNna loaded
+```
 
 
