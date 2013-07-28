@@ -9,7 +9,7 @@ Instalation:
 
 `# insmod cdnna.ko`
 
-After insmod you showuld find in logs:
+After insmod you should find in logs:
 
 ```
 Jul 28 20:59:58 tardis kernel: [ 5458.615519] CDNna loaded
